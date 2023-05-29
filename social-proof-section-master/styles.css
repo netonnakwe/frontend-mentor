@@ -14,15 +14,19 @@
     background-color: hsl(0, 0%, 100%);
     font-size: 15px;
     font-family: league system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
+}
+.body {
+    width: 85%;
+    padding-left: 200px;
+    padding-top: 100px;
+}
   .top {
     display: flex;
-    justify-content: space-around;
-    padding: 30px;
+    justify-content: space-between;
+    margin-bottom: 100px;
   }
   .left {
     width: 400px;
-    margin: 30px;
   }
   .hero {
     font-size: 40px;
@@ -36,14 +40,19 @@
   }
   .ratings {
     background-color: hsl(300, 24%, 96%);
-    padding: 30px;
+    padding: 15px 50px;
     margin-top: 15px;
     font-weight: 700;
     color: hsl(300, 43%, 22%);
     border-radius: 10px;
   }
-  .ratings .one {
-    right:1em;
+  .ratings.one {
+    position: relative;
+    left: -100px;
+  }
+  .ratings.two {
+    position: relative;
+    left: -50px;
   }
   img {
     border-radius: 50%;
@@ -54,10 +63,18 @@
   .reviews {
     background-color: hsl(300, 43%, 22%);
     color: hsl(0, 0%, 100%);
-    width: 25%;
+    width: 31%;
     padding: 25px;
     border-radius: 10px;
     height: 250px;
+  }
+  .reviews.second {
+    position: relative;
+    top: 20px;
+  }
+  .reviews.third {
+    position: relative;
+    top: 40px;
   }
   .profile {
     display: flex;
@@ -70,7 +87,7 @@
     margin-top: none;
   }
   .title {
-    color: hsl(333, 80%, 67%);
+    color: hsl(333, 41%, 53%);
     margin-top: -15px;
     font-weight: 500;
   }
@@ -81,6 +98,6 @@
   }
   .bottom {
     display: flex;
-    justify-content: space-around;
-    padding: 30px;
+    justify-content: space-between;
+    margin-bottom: 50px;
   }
